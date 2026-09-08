@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: home
+excerpt: "Personal page of Alberto Jaenal. Researcher in Computer Vision and Robotics"
 ---
 
 <style>
@@ -11,8 +12,11 @@ layout: page
 }
 
 .profile-photo {
-  flex: 0 0 200px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .profile-info {
@@ -22,12 +26,19 @@ layout: page
 @media (max-width: 768px) {
   .profile-container {
     flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .profile-photo {
+    width: 140px;
+    height: 140px;
   }
 }
 </style>
 
 <div class="profile-container">
-  <img src="{{ site.baseurl }}/assets/images/profile.png" alt="Alberto Jaenal" class="profile-photo" width=40px>
+  <img src="{{ site.baseurl }}/assets/images/profile.png" alt="Alberto Jaenal" class="profile-photo">
   <div class="profile-info">
     <h1>Alberto Jaenal</h1>
     <p><strong>Juan de la Cierva Postdoctoral Researcher</strong><br>
@@ -51,7 +62,7 @@ My interests span from Visual **Place Recognition** and **Visual Localization** 
 
 ## News
 
-- **07/2026**: Paper "Gravity-aware partially calibrated absolute pose estimation from affine- or rotation-covariant features" in collaboration with Marcus Valtonen Örnhag (Ericsson Research) has been accepted as **Spotlight** for ECCV 26!
+- **07/2026**: Paper "Gravity-aware partially calibrated absolute pose estimation from affine- or rotation-covariant features" in collaboration with Marcus Valtonen Örnhag (Ericsson Research) has been accepted as **Spotlight** for ECCV 26! Check the [page](https://marcusvaltonen.github.io/eccv2026/)
 - **02/2026**: I have been accepted as a Marie Curie postdoctoral candidate! Starting from January 2027
 - **01/2026**: Started as Juan de la Cierva Postdoctoral Researcher at University of Zaragoza
 
